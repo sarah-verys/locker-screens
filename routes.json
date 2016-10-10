@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/",
+    "page": "./pages/home",
+    "chunk": "main"
+  },
+  {
+    "path": "/error",
+    "page": "./pages/error",
+    "chunk": "main"
+  },
+  {
+    "path": "/parcelpickup",
+    "page": "./pages/parcel/pickup"
+  },
+  {
+    "path": "/parcellockeropen",
+    "page": "./pages/parcel/lockeropen"
+  },
+  {
+    "path": "/courierpickup",
+    "page": "./pages/courier/pickup"
+  },
+  {
+    "path": "/courierlockeropen",
+    "page": "./pages/courier/lockeropen"
+  },
+  {
+    "path": "/tasks/:status(pending|completed)?",
+    "page": "./pages/home"
+  }
+]
