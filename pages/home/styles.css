@@ -7,11 +7,40 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
-
-@media screen and (max-width: 1024px) {
-
-  .content {
-    padding: 0 16px;
-  }
-
+h1 {
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 40px;
+}
+.row {
+  max-width: 100%;
+  float: none;
+  clear: both;
+}
+.row > div {
+  display: inline-block;
+}
+.left {
+  width: 40%;
+  float: left;
+}
+.right {
+  width: 60%;
+  padding-left: 10vw;
+  float: left;
+}
+.parcelPickup {
+  width: 100%;
+  background-color: #D85A45;
+  color: white;
+  padding: 70px 0px;
+  font-size: 40px;
+  position: relative;
+  box-sizing: border-box;
+  font-weight: 100 !important;
+  line-height: 10px !important;
+}
+.parcelPickup:hover {
+  background-color: #D85A45 !important;
 }

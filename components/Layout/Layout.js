@@ -18,6 +18,9 @@ class Layout extends React.Component {
 
   static propTypes = {
     className: PropTypes.string,
+    hideHeader: PropTypes.string,
+    marginTop: PropTypes.String,
+    sidePadding: PropTypes.String
   }
 
   componentDidMount() {
@@ -29,11 +32,42 @@ class Layout extends React.Component {
   }
 
   render() {
+    var containerStyles = {
+      top: '25vh',
+      height: 'calc(100vh - 25vh)',
+      padding: '0 40px'
+    }
+
+    if (this.props.marginTop == 'less-10') {
+      containerStyles.top = '15vh'
+      containerStyles.height = 'calc(100vh - 15vh)'
+    } else if (this.props.marginTop == 'less-5') {
+      containerStyles.top = '20vh'
+      containerStyles.height = 'calc(100vh - 10vh)'
+    } else if (this.props.marginTop == 'more-5') {
+      containerStyles.top = '30vh'
+      containerStyles.height = 'calc(100vh - 30vh)'
+    } else if (this.props.marginTop == 'more-10') {
+      containerStyles.top = '35vh'
+      containerStyles.height = 'calc(100vh - 35vh)'
+    }
+
+    if (this.props.sidePadding == 'double') {
+      containerStyles.padding = '0 80px'
+    } else if (this.props.sidePadding == 'triple') {
+      containerStyles.padding = '0 120px'
+    }
+
+
     return (
       <div className="mdl-layout mdl-js-layout" ref={node => (this.root = node)}>
         <div className="mdl-layout__inner-container">
-          <Header />
-          <main className="mdl-layout__content">
+          {
+            this.props.hideHeader
+            ? null
+            : <Header />
+          }
+          <main style={containerStyles} id="main-container" className="mdl-layout__content">
             <div {...this.props} className={cx(s.content, this.props.className)} />
           </main>
         </div>

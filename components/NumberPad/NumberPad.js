@@ -43,7 +43,7 @@ class NumberPad extends React.Component {
     const { prompt, nextPage } = this.props
     return (
       <div>
-        <h1>{ prompt }</h1>
+        <h1 className="orangeTitle center">{ prompt }</h1>
         <div className={ s.numberInput }>{ this.state.number }</div>
         <div className={ s.numberPad }>
           <div className={ s.row }>
@@ -69,7 +69,7 @@ class NumberPad extends React.Component {
             </div>
           </div>
         </div>
-        <div className={ s.pageBack }>
+        <div className="pageBack">
           <Button to="/"><img src="orange_back_arrow.png" />Back</Button>
         </div>
       </div>

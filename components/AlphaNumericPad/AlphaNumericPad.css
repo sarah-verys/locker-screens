@@ -1,0 +1,90 @@
+.numberInput {
+  width: 450px;
+  margin: 0 auto;
+  height: 40px;
+  border: 1px solid black;
+  margin-top: 10px;
+  font-size: 32px;
+  line-height: 40px;
+  padding: 0px 10px;
+  overflow: hidden;
+}
+.numberInput.active {
+  border-color: #D85A45;
+}
+.numberPad {
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.row {
+  text-align: center;
+  display: block;
+  margin: 0px 2px;
+  box-sizing: border-box;
+}
+.enter,
+.backspace,
+.numberButton {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 4px 3px;
+  font-size: 30px;
+  text-align: center !important;
+  font-family: 'Open Sans', sans-serif !important;
+  align-items: center !important;
+  padding: 0px !important;
+}
+.enter,
+.backspace {
+  width: 95px;
+}
+.enter {
+  background-color: #D85A45;
+  vertical-align: middle;
+  margin-top: -10px;
+  padding: 0px !important;
+}
+.enter > a {
+  color: white;
+  font-size: 20px;
+  font-weight: 200 !important;
+  padding: 0px !important;
+  font-family: 'Open Sans', sans-serif !important;
+}
+.pageBack {
+  display: block;
+  border: 2px solid #D85A45;
+  color: #D85A45;
+  padding: 10px 20px;
+  width: 120px;
+  margin: 20px auto;
+}
+.pageBack a {
+  color: #D85A45;
+  vertical-align: initial;
+}
+.pageInputs {
+  text-align: center;
+}
+.pageInputs > h2,
+.pageInputs > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px 10px;
+}
+.pageInputs h2 {
+  color: #D85A45;
+  font-size: 30px;
+}
+.pageInputs div {
+  max-width: 150px;
+}
+.pageInputs > div {
+  margin-right: 60px;
+}

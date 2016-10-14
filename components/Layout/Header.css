@@ -8,26 +8,9 @@
 * LICENSE.txt file in the root directory of this source tree.
 */
 
-/*h1, h2, h3, h4, h5, h6 {
-  font-family: 'BankGothicBT-Medium' !important;
-}*/
 
 header {
-  background: none !important;
-  box-shadow: none !important;
-}
-
-body {
-  background-color: #E7E7E7;
-}
-
-.row {
-  padding: 40px;
-}
-
-.title {
-  color: #fff;
-  text-decoration: none;
+  padding-top: 20px !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -35,9 +18,4 @@ body {
   .header {
     display: flex;
   }
-
-  .row {
-    padding: 0 16px;
-  }
-
 }

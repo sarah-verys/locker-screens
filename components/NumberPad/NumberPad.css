@@ -1,7 +1,3 @@
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-}
 .numberInput {
   width: 450px;
   margin: 0 auto;
@@ -11,18 +7,21 @@ h1 {
   font-size: 32px;
   line-height: 40px;
   padding: 0px 10px;
+  overflow: hidden;
 }
 .numberPad {
   width: 420px;
-  margin: 0 auto;
+  margin: 10px auto;
   box-sizing: border-box;
-  margin-top: 10px;
+  text-align: center;
 }
 .row {
-  width: 80px;
-  float: left;
-  margin: 0px 2px;
-  box-sizing: border-box;
+    width: 80px;
+    /* float: left; */
+    margin: 0px 2px;
+    /*box-sizing: border-box;*/
+    display: inline-block;
+    vertical-align: top;
 }
 .backspace,
 .numberButton {
@@ -33,13 +32,12 @@ h1 {
   border: 1px solid black;
   margin: 4px 0px;
   font-size: 30px;
-  font-weight: 600;
   box-sizing: border-box;
 }
 .enter {
   width: 80px;
   height: 164px;
-  border: 1px solid black;
+  border: 1px solid #D85A45;
   margin: 1px;
   background-color: #D85A45;
   color: white;
@@ -58,4 +56,21 @@ h1 {
 
 .pageBack {
   display: block;
+  float: none;
+  clear: both;
+  text-align: center;
+  border: 1px solid #D85A45;
+  width: 156px;
+  margin: 0 auto;
+}
+.pageBack > a {
+  color: #D85A45;
+  text-transform: uppercase;
+  font-family: 'Bank Gothic' !important;
+  width: 100%;
+  height: 100%;
+  line-height: 38px;
+}
+.pageBack > a > img {
+  padding: 5px 10px 5px 0px;
 }

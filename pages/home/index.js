@@ -18,10 +18,20 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout className={s.content}>
-        <h1>Welcome</h1>
-        <h2>To Begin, please make a selection.</h2>
-        <Button to="/parcelpickup">PARCEL PICKUP</Button>
-        <Button to="/courierpickup">COURIER DELIVERY</Button>
+        <div className={s.row}>
+          <div className={s.left}>
+            <h1 className="orangeTitle">Welcome</h1>
+            <h2 className="sansSerifSubTitle">To begin, please make a selection.</h2>
+          </div>
+          <div className={`${s.right}`}>
+            <Button className={`${s.parcelPickup} bankGothic`} to="/parcelpickup">PARCEL PICKUP</Button>
+          </div>
+        </div>
+        <div className={s.row}>
+          <div className={`${s.left}`}>
+            <Button className="grayButton" to="/courierpickup">COURIER DELIVERY</Button>
+          </div>
+        </div>
       </Layout>
     );
   }

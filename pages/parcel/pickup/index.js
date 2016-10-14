@@ -17,7 +17,7 @@ class ParcelPickupPage extends React.Component {
 
   render() {
     return (
-      <Layout className={s.content}>
+      <Layout marginTop="less-5">
         <NumberPad prompt="Please Enter Pickup Code" nextPage="/parcellockeropen"></NumberPad>
       </Layout>
     );

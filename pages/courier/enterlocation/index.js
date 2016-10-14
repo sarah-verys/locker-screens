@@ -8,21 +8,21 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Layout from '../../../components/Layout';
-import NumberPad from '../../../components/NumberPad';
+import Button from '../../../components/Button';
+import AlphaNumericPad from '../../../components/AlphaNumericPad';
 import s from './styles.css';
 
-class CourierPickupPage extends React.Component {
-
+class EnterLocationPage extends React.Component {
   render() {
     return (
-      <Layout marginTop="less-5">
-        <NumberPad prompt="Please Enter Courier Code" nextPage="/courierverifying"></NumberPad>
+      <Layout className={s.content}>
+        <AlphaNumericPad nextPage="/courierselectrecipient"></AlphaNumericPad>
       </Layout>
     );
   }
 
 }
 
-export default CourierPickupPage;
+export default EnterLocationPage;

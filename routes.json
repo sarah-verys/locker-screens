@@ -5,25 +5,62 @@
     "chunk": "main"
   },
   {
-    "path": "/error",
-    "page": "./pages/error",
-    "chunk": "main"
+    "path": "/courierenterlocation",
+    "page": "./pages/courier/enterlocation"
   },
   {
-    "path": "/parcelpickup",
-    "page": "./pages/parcel/pickup"
+    "path": "/courierlockeropen",
+    "page": "./pages/courier/lockeropen"
   },
   {
-    "path": "/parcellockeropen",
-    "page": "./pages/parcel/lockeropen"
+    "path": "/courieroversizedparcel",
+    "page": "./pages/courier/oversizedparcel"
+  },
+  {
+    "path": "/courierparceldelivered",
+    "page": "./pages/courier/parceldelivered"
+  },
+  {
+    "path": "/courierparcelundetected",
+    "page": "./pages/courier/parcelundetected"
   },
   {
     "path": "/courierpickup",
     "page": "./pages/courier/pickup"
   },
   {
-    "path": "/courierlockeropen",
-    "page": "./pages/courier/lockeropen"
+    "path": "/courierscan",
+    "page": "./pages/courier/scan"
+  },
+  {
+    "path": "/courierselectlocker",
+    "page": "./pages/courier/selectlocker"
+  },
+  {
+    "path": "/courierselectrecipient",
+    "page": "./pages/courier/selectrecipient"
+  },
+  {
+    "path": "/courierverifying",
+    "page": "./pages/courier/verifying"
+  },
+  {
+    "path": "/error",
+    "page": "./pages/error",
+    "chunk": "main"
+  },
+  {
+    "path": "/thankyou",
+    "page": "./pages/thankyou",
+    "chunk": "main"
+  },
+  {
+    "path": "/parcellockeropen",
+    "page": "./pages/parcel/lockeropen"
+  },
+  {
+    "path": "/parcelpickup",
+    "page": "./pages/parcel/pickup"
   },
   {
     "path": "/tasks/:status(pending|completed)?",

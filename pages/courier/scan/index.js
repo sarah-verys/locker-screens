@@ -13,20 +13,25 @@ import Layout from '../../../components/Layout';
 import Button from '../../../components/Button';
 import s from './styles.css';
 
-class LockerOpen extends React.Component {
+class ScanPage extends React.Component {
 
   render() {
     return (
-      <Layout sidePadding="triple" marginTop="less-5">
-        <h1 className="orangeTitle left">LOCKER IS NOW OPEN</h1>
-        <h2 className={ `sansSerifSubTitle ${s.h2}` }>Insert parcel into locker and close door when finished.</h2>
+      <Layout marginTop="more-5" sidePadding="double">
+        <h1 className="orangeTitle center">PLEASE SCAN PARCEL</h1>
+        <div className={`${s.verifying} center`}>
+          <img src="barcode.png" />
+        </div>
         <div className={ `${s.row}` }>
           <div className={ `${s.left}` }>
-            <Button className={ `${ s.packageButton }` } to="/courierscan">MORE PARCELS</Button>
-            <Button className={ `${ s.packageButton }` } to="/thankyou">I'M FINISHED</Button>
+            <div className={ `pageBack ${s.back}` }>
+              <Button to="/courierpickup"><img src="orange_back_arrow.png" />Back</Button>
+            </div>
           </div>
           <div className={ `${s.right}` }>
-            <img src="big_back_arrow.png" />
+            <div className={ `pageBack ${s.skip}` }>
+              <Button to="/courierenterlocation">Skip Scan</Button>
+            </div>
           </div>
         </div>
       </Layout>
@@ -35,4 +40,4 @@ class LockerOpen extends React.Component {
 
 }
 
-export default LockerOpen;
+export default ScanPage;

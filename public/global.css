@@ -1,0 +1,150 @@
+/**
+ * MD style overrides
+ * No idea if these things already exist, but too lazy to investigate
+ */
+* {
+  box-sizing: border-box !important;
+}
+#main-container.mdl-layout__content {
+  top: 25vh;
+  padding: 0 40px ;
+  width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: absolute;
+  height: calc(100vh - 25vh);
+}
+.mdl-button:hover {
+  background-color: inherit;
+}
+div.mdl-layout__header-row,
+.mdl-layout__header-row,
+.mdl-layout__header,
+header.mdl-layout__header,
+header {
+  background-color: #E7E7E7;
+  box-shadow: none;
+}
+.mdl-layout-title {
+  position: absolute !important;
+  left: 20px !important;
+  top: 10px !important;
+}
+nav {
+  float: right !important;
+  display: inline-block !important;
+  position: absolute !important;
+  right: 20px !important;
+  top: 30px !important;
+}
+/**
+ * Global Styles
+ */
+.clearfix {
+  clear: both !important;
+  float: none !important;
+}
+
+body {
+  background-color: #E7E7E7;
+  font-family: 'Open Sans', sans-serif;
+  line-height: normal;
+  max-height: 100vh !important;
+  overflow: hidden !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'BankGothicBT-Medium';
+  line-height: normal;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.orange {
+  color: #D85A45;
+}
+.orangeButton {
+  background-color: #D85A45;
+  color: #ffffff;
+  border: 1px solid #D85A45 !important;
+}
+.orangeButton:hover {
+  background: #D85A45;
+}
+.bankGothic {
+  font-family: 'BankGothicBT-Light' !important;
+}
+.sansSerif {
+  font-family: 'Open Sans', sans-serif !important;
+}
+.grayButton {
+  background-color: #8A8A8A;
+  font-family: 'BankGothicBT-Light';
+  color: #FFFFFF;
+  width: 100%;
+  padding: 40px 0px;
+  font-size: 25px;
+  bottom: 10vh;
+  position: absolute;
+  width: 40%;
+  line-height: 5px;
+}
+.grayButton:hover {
+  background-color: #8A8A8A;
+}
+.orangeTitle {
+  color: #D85A45;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.sansSerifSubTitle {
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  font-size: 35px;
+  margin: 0px;
+}
+.sansSerifTitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #000000;
+}
+.pageBack {
+  display: block;
+  float: none;
+  clear: both;
+  text-align: center;
+  border: 1px solid #D85A45;
+  width: 156px;
+  margin: 0 auto;
+  height: 55px;
+}
+.pageBack > a {
+  color: #D85A45;
+  text-transform: uppercase;
+  font-family: 'BankGothicBT-Light';
+  width: 100%;
+  height: 100%;
+  line-height: 55px;
+}
+.pageBack > a > img {
+  padding: 5px 10px 5px 0px;
+}
+.verifying {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .row {
+    max-width: 100%;
+  }
+
+}

@@ -8,3 +8,32 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
+.verifying {
+  padding: 10px;
+  border: 2px solid black;
+  margin-top: 40px;
+}
+
+.row {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.left,
+.right {
+  display: inline-block;
+  width: 50%;
+}
+
+.back,
+.skip {
+  margin: 0;
+}
+
+.back {
+  float: left;
+}
+
+.skip {
+  float: right;
+}
